@@ -81,7 +81,7 @@ for epoch in range(1, num_epochs + 1):
         loss_min = loss_valid
         if not os.path.exists("./content"):
             os.mkdir("./content")
-        torch.save(network.state_dict(), './content/face_landmarks2.pth')
+        torch.save(network.state_dict(), './content/face_landmarks.pth')
         print("\nMinimum Validation Loss of {:.4f} at epoch {}/{}".format(loss_min, epoch, num_epochs))
         print('Model Saved\n')
 

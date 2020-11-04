@@ -27,7 +27,7 @@ with torch.no_grad():
         plt.scatter(predictions[img_num, :, 0], predictions[img_num, :, 1], c='r', s=5)
         plt.scatter(landmarks[img_num, :, 0], landmarks[img_num, :, 1], c='g', s=5)
 
-    plt.savefig('./content/result_30.jpg')
+    plt.savefig('./content/result.jpg')
 
 print('Total number of test images: {}'.format(len(valid_dataset)))
 
